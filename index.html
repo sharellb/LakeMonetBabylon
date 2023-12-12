@@ -83,7 +83,7 @@
 groundMaterial.diffuseTexture = groundTexture;
     ground.material = groundMaterial;
 
-    BABYLON.SceneLoader.ImportMeshAsync("", "/", "sleeping-plum.glb").then((result) => {
+    BABYLON.SceneLoader.ImportMeshAsync("", "", "sleeping-plum.glb").then((result) => {
         result.meshes[1].position.x = 20;
         const myMesh1 = scene.getMeshByName("myMesh_1");
         myMesh1.rotation.y = Math.PI / 2;
